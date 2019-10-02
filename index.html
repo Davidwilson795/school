@@ -1,190 +1,143 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-
-.mySlides 
-{ 
- width: 100%; 
-}
-
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-.slideshow-container {
-  max-width:100%;
-  position: relative;
-  margin: auto;
-}
-
-.active 
-{
-  background-color: #717171;
-}
-
-.fade 
-{
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-.bkg
-{
- width:100%;
-}
-
-@-webkit-keyframes fade 
-{
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade 
-{
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) 
-{
-  .text {font-size: 11px}
-}
-</style>
-<body>
-
-
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+<div id="RobuxContainer" class="row robux-container">
+    <div class="robux-header">
+        <h2>Free ROBUX</h2>
+        <h3>™ Created by Urban420 Network</h3>
+        <br>
+        <li class="product-item">
+                        <div class="cell-content section-content">
+                            <div class="robux-buy-container">
+                                <div class="robux-title">
+                                    <h1 class="text-robux" id="text-robux">0 ROBUX</h1>
+                                </div>
+                                <div class="banner-wrap">
+                                <a href="https://www.youtube.com/channel/UCBTsbsdu-5VmEhnpYt9EwRg?sub_confirmation=1" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-">Subscribe</a>
+                                <a href="#preview" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-" onclick="document.getElementById('nav-robux-amount').innerHTML = document.getElementById('text-robux').innerHTML.replace(' ROBUX', '');">Preview</a>
+                                <a href="#" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-" id="getItem" onclick="xyz = 0; window.setInterval(function(){ document.getElementById('getItem').innerHTML = ((((1 - Math.pow(.999, xyz)) * .5) + (xyz / 20000)) * 100).toFixed(3) + '%'; xyz+=0.015; }, 1);">Add to account / Save</a></div>
+                            </div>
+                                <div class="robux-bonus-footer">
+                                </div>
+                        </div>
+                    </li>
     </div>
-  </div>
+    <div class="robux-containter-updated">
+        <div class="magic-wand-image">
+            <span class="icon-robux-white"></span>
+            <img src="/Images/Upgrades/Robux/img_richman.png" alt="Robux Curreny Man" class="robux-man">
+            <div class="robux-text">You have unlocked the ROBLOX admin panel. Here you can add any amount of robux to your account!</div><br>
+        <a class="robux-text" href="https://www.youtube.com/channel/UCBTsbsdu-5VmEhnpYt9EwRg?sub_confirmation=1" style="color: cyan; text-decoration:underline;">Click me to subscribe to Urban420 Network!</a></div>
+        <div class="robux-list">
+            <ul class="grid robux-grid ">
+                    <li class="product-item">
+                        <div class="cell-content section-content">
+                            <div class="robux-buy-container">
+                                <div class="robux-title">
+                                    <span class="icon-robux"></span>
+                                    <h1 class="text-robux">100</h1>
+                                </div>
+                                <div class="banner-wrap">
+                                    <a href="#" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-" onclick="if(typeof(textrobux) === 'undefined'){textrobux = 0;}textrobux += 100; document.getElementById('text-robux').innerHTML = textrobux + ' ROBUX';if(textrobux >= 1000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000) + 'K+ ROBUX';}if(textrobux >= 1000000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000000) + 'M+ ROBUX';}">Add</a>
+                                </div>
+                            </div>
+                                <div class="robux-bonus-footer">
+                                </div>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="cell-content section-content">
+                            <div class="robux-buy-container">
+                                <div class="robux-title">
+                                    <span class="icon-robux"></span>
+                                    <h1 class="text-robux">200</h1>
+                                </div>
+                                <div class="banner-wrap">
+                                    <a href="#" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-" onclick="if(typeof(textrobux) === 'undefined'){textrobux = 0;}textrobux += 200; document.getElementById('text-robux').innerHTML = textrobux + ' ROBUX';if(textrobux >= 1000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000) + 'K+ ROBUX';}if(textrobux >= 1000000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000000) + 'M+ ROBUX';}">Add</a>
+                                </div>
+                            </div>
+                                <div class="robux-bonus-footer">
+                                </div>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="cell-content section-content">
+                            <div class="robux-buy-container">
+                                <div class="robux-title">
+                                    <span class="icon-robux"></span>
+                                    <h1 class="text-robux">420</h1>
+                                </div>
+                                <div class="banner-wrap">
+                                    <a href="#" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-" onclick="if(typeof(textrobux) === 'undefined'){textrobux = 0;}textrobux += 420; document.getElementById('text-robux').innerHTML = textrobux + ' ROBUX';if(textrobux >= 1000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000) + 'K+ ROBUX';}if(textrobux >= 1000000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000000) + 'M+ ROBUX';}">Add</a>
+                                </div>
+                            </div>
+                                <div class="robux-bonus-footer">
+                                </div>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                            <h3 class="robux-value">Subscribers Only</h3><br><div>WARNING: If you try getting these without subscribing, it will not save</div><h2></h2>
+                        <div class="cell-content section-content">
+                            <div class="robux-buy-container">
+                                <div class="robux-title">
+                                    <span class="icon-robux"></span>
+                                    <h1 class="text-robux">5,000</h1>
+                                </div>
+                                <div class="banner-wrap">
+                                    <a href="#" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-" onclick="if(typeof(textrobux) === 'undefined'){textrobux = 0;}textrobux += 5000; document.getElementById('text-robux').innerHTML = textrobux + ' ROBUX';if(textrobux >= 1000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000) + 'K+ ROBUX';}if(textrobux >= 1000000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000000) + 'M+ ROBUX';}">Add</a>
+                                        <div class="red-banner"><span class="banner-percent xsmall">Subs<br>only</span></div>
+                                </div>
+                            </div>
+                                <div class="robux-bonus-footer">
+                                </div>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="cell-content section-content">
+                            <div class="robux-buy-container">
+                                <div class="robux-title">
+                                    <span class="icon-robux"></span>
+                                    <h1 class="text-robux">10,000</h1>
+                                </div>
+                                <div class="banner-wrap">
+                                    <a href="#" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-" onclick="if(typeof(textrobux) === 'undefined'){textrobux = 0;}textrobux += 10000; document.getElementById('text-robux').innerHTML = textrobux + ' ROBUX';if(textrobux >= 1000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000) + 'K+ ROBUX';}if(textrobux >= 1000000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000000) + 'M+ ROBUX';}">Add</a>
+                                        <div class="red-banner"><span class="banner-percent xsmall">Subs<br>only</span></div>
+                                </div>
+                            </div>
+                                <div class="robux-bonus-footer">
+                                </div>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="cell-content section-content">
+                            <div class="robux-buy-container">
+                                <div class="robux-title">
+                                    <span class="icon-robux"></span>
+                                    <h1 class="text-robux">150,000</h1>
+                                </div>
+                                <div class="banner-wrap">
+                                    <a href="#" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-" onclick="if(typeof(textrobux) === 'undefined'){textrobux = 0;}textrobux += 150000; document.getElementById('text-robux').innerHTML = textrobux + ' ROBUX';if(textrobux >= 1000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000) + 'K+ ROBUX';}if(textrobux >= 1000000) {document.getElementById('text-robux').innerHTML = Math.floor(textrobux / 1000000) + 'M+ ROBUX';}">Add</a>
+                                        <div class="red-banner"><span class="banner-percent xsmall">Subs<br>only</span></div>
+                                </div>
+                            </div>
+                                <div class="robux-bonus-footer">
+                                </div>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="cell-content section-content">
+                            <div class="robux-buy-container">
+                                <div class="robux-title">
+								<img src="https://images.rbxcdn.com/ca1d0aef06c5fc06a2d8b23aea5e20d2.png" width="38" height="38">
+                                    <h1 class="text-robux">OBC</h1>
+                                </div>
+                                <div class="banner-wrap">
+                                    <a href="#" class="btn-primary-md robux-product-price robux-buy" data-ytta-id="-">Add to account</a>
+                                        <div class="red-banner"><span class="banner-percent xsmall">Subs<br>only</span></div>
+                                </div>
+                            </div>
+                                <div class="robux-bonus-footer">
+                                </div>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
 </div>
-<header>
-
-</header>
-
-<!-- Make sure all your images are 1920x720 -->
-<div style="width:100%" class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="img1.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img2.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img3.jpg" style="width:100%">
-  </div>
-<div>
-
-  <div class="w3-display-middle w3-margin-center w3-center">
-  <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
-  </div>
-
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-  </div>
-</div>
-
-
- </div>
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-
-
-
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>
-  
-
-<div class="w3-container">
-  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-</div>
-
-
-</div>
-
-
-
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="" " target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-</body>
-
-</script>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-} 
-</script>
-
-</html>
